@@ -5,25 +5,19 @@ Developing NO.ONE components using different LLMs (Gemini, GPT-5, Mistral...), L
 
 ## 🚀 How to Run
 
-1.  **Clone the repository**:
-    ```bash
-    git clone <your-repo-url>
-    cd <your-repo-name>
-    ```
-
-2.  **Create and activate the virtual environment using `uv`**:
+1.  **Create and activate the virtual environment using `uv`**:
     ```bash
     uv venv no-one-env
     source no-one-env/bin/activate
     ```
 
-3.  **Install dependencies**:
+2.  **Install dependencies**:
     This project will eventually have a `requirements.txt` file. For now, install the main packages:
     ```bash
     uv pip install streamlit langfuse agno
     ```
 
-4.  **Set API keys**:
+3.  **Set API keys**:
     # OpenAI API Key
     echo "OPENAI_API_KEY=your-openai-api-key-here" >> .env
 
@@ -33,7 +27,7 @@ Developing NO.ONE components using different LLMs (Gemini, GPT-5, Mistral...), L
     echo "LANGFUSE_HOST=https://langfuse.gradient0.com" >> .env
     echo "LANGFUSE_TRACING_ENVIRONMENT=development" >> .env
 
-5.  **Run the Streamlit app**:
+4.  **Run the Streamlit app**:
     ```bash
     streamlit run app.py
     ```
