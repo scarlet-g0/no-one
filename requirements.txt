@@ -1,0 +1,8 @@
+langfuse
+agno
+openai
+python-dotenv
+pydantic
+deepeval
+streamlit
+google-generativeai
