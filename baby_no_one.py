@@ -10,6 +10,7 @@ import os
 import uuid
 from dotenv import load_dotenv
 from langfuse import get_client, observe
+from prompt_baby_no_one import final_system_prompt
 
 load_dotenv()
 
@@ -30,7 +31,7 @@ class BabyNoOne(Agent):
             langfuse_client: Langfuse client for tracing
         """
         self.provider = provider.lower()
-        self.system_prompt = "You are a communication assistant decoding semantic layers from unclear statements."
+        self.system_prompt = final_system_prompt
         self.langfuse_client = langfuse_client
         
         if self.provider == 'google':
