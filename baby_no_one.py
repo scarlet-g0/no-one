@@ -38,7 +38,7 @@ class BabyNoOne(Agent):
             # --- Google Setup ---
             genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
             self.client = genai.GenerativeModel(
-                model_name='gemini-1.5-flash',
+                model_name='gemini-2.5-pro',
                 system_instruction=self.system_prompt
             )
             print("🤖 Initialized with Google Gemini")
